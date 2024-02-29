@@ -24,9 +24,6 @@ class Finales extends Component
             $this->notasF = 'no procede';
         }
 
-        else{
-            $this->notasF+=;
-        }
     }
 
     public function render()

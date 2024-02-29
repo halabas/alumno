@@ -6,8 +6,19 @@ use App\Models\Alumno;
 use App\Models\User;
 use Illuminate\Auth\Access\Response;
 
+
+
+
 class AlumnoPolicy
 {
+    public function before($user)
+    {
+        if ($user->id == 2) {
+            return true;
+        }
+    }
+
+
     /**
      * Determine whether the user can view any models.
      */
